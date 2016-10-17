@@ -1,0 +1,41 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: UnityEngine.AudioHighPassFilter
+// Assembly: UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: A8FF7A2C-E4EE-4232-AB17-3FCABEC16496
+// Assembly location: C:\Users\Blake\sandbox\unity\test-project\Library\UnityAssemblies\UnityEngine.dll
+
+using System;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+
+namespace UnityEngine
+{
+  /// <summary>
+  ///   <para>The Audio High Pass Filter passes high frequencies of an AudioSource and.</para>
+  /// </summary>
+  public sealed class AudioHighPassFilter : Behaviour
+  {
+    /// <summary>
+    ///   <para>Highpass cutoff frequency in hz. 10.0 to 22000.0. Default = 5000.0.</para>
+    /// </summary>
+    public float cutoffFrequency { [WrapperlessIcall, MethodImpl(MethodImplOptions.InternalCall)] get; [WrapperlessIcall, MethodImpl(MethodImplOptions.InternalCall)] set; }
+
+    /// <summary>
+    ///   <para>Determines how much the filter's self-resonance isdampened.</para>
+    /// </summary>
+    public float highpassResonanceQ { [WrapperlessIcall, MethodImpl(MethodImplOptions.InternalCall)] get; [WrapperlessIcall, MethodImpl(MethodImplOptions.InternalCall)] set; }
+
+    [EditorBrowsable(EditorBrowsableState.Never)]
+    [Obsolete("AudioHighPassFilter.highpassResonaceQ is obsolete. Use highpassResonanceQ instead (UnityUpgradable) -> highpassResonanceQ", true)]
+    public float highpassResonaceQ
+    {
+      get
+      {
+        return this.highpassResonanceQ;
+      }
+      set
+      {
+      }
+    }
+  }
+}

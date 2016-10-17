@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Blake\shadow-0\Library\UnityAssemblies\UnityEditor.Networking.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{240CE229-E1F8-4072-BFEE-B1E9154961AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>UnityEditor.Networking</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>UnityEditor</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEditor" />
+    <Reference Include="UnityEngine" />
+    <Reference Include="UnityEngine.Networking" />
+    <Reference Include="System.Core" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NetworkAnimatorEditor.cs" />
+    <Compile Include="NetworkBehaviourInspector.cs" />
+    <Compile Include="NetworkDiscoveryEditor.cs" />
+    <Compile Include="NetworkIdentityEditor.cs" />
+    <Compile Include="NetworkLobbyManagerEditor.cs" />
+    <Compile Include="NetworkManagerEditor.cs" />
+    <Compile Include="NetworkManagerHUDEditor.cs" />
+    <Compile Include="NetworkMigrationManagerEditor.cs" />
+    <Compile Include="NetworkScenePostProcess.cs" />
+    <Compile Include="NetworkTransformChildEditor.cs" />
+    <Compile Include="NetworkTransformEditor.cs" />
+    <Compile Include="Networking\NetworkInformationPreview.cs" />
+    <Compile Include="Networking\NetworkManagerPreview.cs" />
+    <Compile Include="Networking\NetworkTransformPreview.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

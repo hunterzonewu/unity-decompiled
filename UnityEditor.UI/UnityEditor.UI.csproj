@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Blake\shadow-0\Library\UnityAssemblies\UnityEditor.UI.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6172E9D8-E3FE-4B71-8618-A6BFBD36E30F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>UnityEditor.UI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>UnityEditor</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEditor" />
+    <Reference Include="UnityEngine" />
+    <Reference Include="UnityEngine.UI" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Events\InterceptedEventsPreview.cs" />
+    <Compile Include="Events\LayoutPropertiesPreview.cs" />
+    <Compile Include="EventSystems\EventSystemEditor.cs" />
+    <Compile Include="EventSystems\EventTriggerEditor.cs" />
+    <Compile Include="UI\AspectRatioFitterEditor.cs" />
+    <Compile Include="UI\ButtonEditor.cs" />
+    <Compile Include="UI\CanvasScalerEditor.cs" />
+    <Compile Include="UI\ContentSizeFitterEditor.cs" />
+    <Compile Include="UI\DropdownEditor.cs" />
+    <Compile Include="UI\GraphicEditor.cs" />
+    <Compile Include="UI\GridLayoutGroupEditor.cs" />
+    <Compile Include="UI\HorizontalOrVerticalLayoutGroupEditor.cs" />
+    <Compile Include="UI\ImageEditor.cs" />
+    <Compile Include="UI\InputFieldEditor.cs" />
+    <Compile Include="UI\LayoutElementEditor.cs" />
+    <Compile Include="UI\MaskEditor.cs" />
+    <Compile Include="UI\MenuOptions.cs" />
+    <Compile Include="UI\PrefabLayoutRebuilder.cs" />
+    <Compile Include="UI\RawImageEditor.cs" />
+    <Compile Include="UI\ScrollbarEditor.cs" />
+    <Compile Include="UI\ScrollRectEditor.cs" />
+    <Compile Include="UI\SelectableEditor.cs" />
+    <Compile Include="UI\SelfControllerEditor.cs" />
+    <Compile Include="UI\SliderEditor.cs" />
+    <Compile Include="UI\SpriteDrawUtility.cs" />
+    <Compile Include="UI\TextEditor.cs" />
+    <Compile Include="UI\ToggleEditor.cs" />
+    <Compile Include="UI\AnimationTriggersDrawer.cs" />
+    <Compile Include="UI\ColorBlockDrawer.cs" />
+    <Compile Include="UI\DropdownOptionListDrawer.cs" />
+    <Compile Include="UI\FontDataDrawer.cs" />
+    <Compile Include="UI\NavigationDrawer.cs" />
+    <Compile Include="UI\SpriteStateDrawer.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
